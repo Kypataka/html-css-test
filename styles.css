@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+a {
+    color: rgb(34, 30, 30);
+    text-decoration: none;
+    transition: all .5s; /*Максимум 9с вроде, это плавность анимации ссылки*/
+}
+
+a:hover {
+    color: orange;
+    font-size: 20px;
+}
+
+p {
+    margin-right: 30px;
+    text-indent: 15px;
+}
+
+.shapka h3:hover {
+    color: #e3bcb6;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 2s;
+}
+
+/* a:visited {     -- Меняет цвет ссылки при переходе по ней.
+    color: red;
+} */
+
+/* h1:hover {
+    color: blueviolet;
+    font-size: 40px;
+    transition: all .5s;
+} */
+
+.foto {
+    border-radius: 30px;
+    box-shadow: 10px 10px 3px;
+    color: rgba(0, 255, 255, 0.715);
+    margin-right: 15px;
+
+}
+
+.body {
+    font-family: roboto, sans-serif;
+    line-height: 25px;
+    /* max-width: 1200px; */
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    background-color: blanchedalmond;
+}
+
+
+.shapka {
+    margin-left: 25px;
+}
+/* #blok1 p {
+    font-size: 18px;
+} */
+.head {
+    display: flex;
+    margin-bottom: 25px;
+    color: rgba(16, 53, 2, 0.903);
+}
+
+@media (max-width: 1015px) {
+    .body {
+        font-size: 10px;
+        text-align: center;
+        line-height: normal;
+        margin-left: 5px;
+    }
+    .head {
+        display: block;
+        margin-bottom: 3px;
+    }
+}
+
+.lorem2 {
+    /* color: blue; */
+    background-color: #e3bcb6;
+    border: 2px solid #ff000068;
+    border-radius: 20px;
+    padding-left: 10px ;
+    box-shadow: 15px 15px 15px  rgba(255, 0, 0, 0.503);
+    }
+
+.lorem2:hover {
+    color: rgba(46, 134, 8, 0.903);
+    font-size: 40px;
+    transition: all .9s;
+    background-color: #b8c480;
+    font-size: 18px;
+    /* border: 2px solid #b8c480;
+    border-radius: 20px;
+    padding-left: 10px ;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px rgba(9, 5, 5, 0.378); */
+}
+
+.par2 {
+    color: rgb(195, 1, 248);
+}
+
+.primerspana {
+    color: brown;
+}
+
+.num {
+    /* margin-right: 1200px; */
+    width: 300px;
+    background-color: rgba(173, 216, 230, 0.545);
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #add8e688;
+    border-radius: 30px;
+}
+
+.spisok-num {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mark {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(80, 154, 90, 0.315);
+    padding-left: 15px;
+    border: 1px solid #add8e688;
+    border-radius: 20px;
+    /* list-style: none; */
+    }
+
+.spisok-mark li {
+    border-bottom: 2px solid grey;
+}
+
+.table {
+    width: 600px;
+    text-align: center;
+    background-color: #e1887ab4;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+.table td:hover {
+background-color: #e3bcb6;
+}
+@media (max-width: 500px) {
+    .table {
+        width: 350px;
+        padding: auto;
+        text-align: left;
+        line-height: normal;
+    }
+}
+/* .table td:nth-child(odd) { 
+    background: #eeefff8f;
+}
+.table tr:nth-child(2) {
+    background: #eeefff8f;
+} */
+
+.input {
+    max-width: 800px;
+    background-color:rgb(195, 1, 248, 0.25);
+    box-shadow: 15px 15px rgba(116, 2, 122, 0.588);
+    border-radius: 50px;
+    padding: 10px 10px 20px 40px;
+}
+
+.navbar {
+    background: #b8c480;
+}
+.navbar ul { /* обратились ко всему списку внутри панели навигации*/
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex; /*сделали весь список в одну строку*/
+}
+.navbar ul li { /* обратились только к строкам внутри списка*/
+    margin-right: 10px;
+    padding: 10px;
+
+}
+.navbar ul li:hover {
+    background: #e3bcb6;
+}
+.navbar ul li:last-child { /* обратились к последнему элементу списка, ещё есть first-child - обращение к первому элементу*/
+    margin-right: 0;
+}
+
+.footer {
+    width: 800px;
+    padding: 10px 0px 10px 15px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: rgb(116, 99, 99);
+    border: 5px solid rgba(47, 107, 4, 0.751);
+    border-top: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 25px rgba(0, 0, 0, 0.378);
+}
+@media (max-width: 500px) {
+    .navbar {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar ul li {
+        margin-right: 2px;
+    }
+    .footer {
+        width: 350px;
+        padding: 1px 1px;
+        box-shadow: 2px 2px;
+    }
+}
+
+.btn {
+    background-color: #b8c480;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    box-shadow: 5px 5px;
+}
+.btn:hover {
+    font-size: 30px;
+    background-color: #d23ebc87;
+    height: 50px;
+    transition: all .9s;
+    opacity: 0.5;
+}
+
+.btn2 {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    z-index: 0;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(176, 122, 34);
+    border-left: 5px solid #000;
+    border-bottom: 5px solid #000;
+    text-align: center;
+}
+
+/* .button {
+    border-width: 3px;
+    border-color: brown;
+    border-style: solid;
+    border-radius: 50%;
+} */
